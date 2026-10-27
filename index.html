@@ -9,6 +9,10 @@
 .result{width:max-content;max-width:none;justify-self:center}
 .result .value{width:100%;min-width:0}
 .result .caption{width:max-content;max-width:none}
+/* Keep each result caption centered beneath its number, even when the number grows. */
+.result{display:flex;flex-direction:column;align-items:center;text-align:center}
+.result .value{width:100%;text-align:center}
+.result .caption{width:100%;text-align:center;align-self:center}
 /* Reduce subtitle/description typography by 20 percent. */
 .heading p{font-size:32.8px}
 .field .label{font-size:20px}
